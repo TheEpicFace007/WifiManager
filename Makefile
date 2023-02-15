@@ -89,7 +89,7 @@ CFLAGS	:=	-g -Wall -Wextra -O2 -mword-relocations \
 			-ffunction-sections \
 			$(ARCH)
 
-CFLAGS	+=	$(INCLUDE) -DARM11 -D_3DS -D_GNU_SOURCE -DTITLE="\"$(APP_TITLE)\""
+CFLAGS	+=	$(INCLUDE)-D__3DS__ -D_GNU_SOURCE -DTITLE="\"$(APP_TITLE)\""
 
 CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions -std=gnu++11
 
